@@ -1,0 +1,63 @@
+body {
+    background-color: #29AB87; /* Set the background color to green */
+    color: #dadada; /* Set text color to white for better contrast */
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Adjust the font size as needed */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.navbar-nav .nav-link:hover {
+    color:#018c66 ;    /*  link hover colour dark green*/
+    transform: scale(1.5); /* Zoom effect on hover */
+}
+
+.container {
+    border-radius: 5px; /* Optional: Add some border-radius for a softer look */
+    padding: 20px;
+    margin-top: 50px; /* Adjust the margin as needed */
+}
+
+.cdClass {
+    background-color: #dadada; /* Set background color to yellow */
+    border-radius: 10px;
+}
+
+/* Animation for card hover effect */
+.card {
+    transition: transform 0.36s ease, box-shadow 0.36s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.1); /* Move up and slightly enlarge on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Increase shadow size on hover */
+}
+
+/* Animation for success message */
+#success-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #dadada; /* Bootstrap success color */
+    color: #dadada;
+    padding: 20px 40px; /* Increased padding */
+    border-radius: 5px;
+    font-size: 24px; /* Increased font size */
+    display: none; /* Initially hidden */
+    animation: fadeIn 0.5s ease-out forwards; /* Animation for fade in */
+}
+
+/* Styles for the checkmark symbol */
+.symbol {
+    margin-right: 10px; /* Spacing between symbol and message */
+    font-size: 28px; /* Adjust size of the symbol */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+

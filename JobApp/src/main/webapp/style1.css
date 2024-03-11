@@ -1,0 +1,41 @@
+body {
+    background-color: #29AB87;
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+}
+
+.oval-box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.oval-box {
+    position: relative;
+    width: 300px; /* Adjusted width */
+    height: 200px; /* Adjusted height */
+    background-color: #dadada;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: cursor: -webkit-grab;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.oval-box:hover {
+    background-color: #dadada; /* Darker blue color on hover */
+    transform: scale(1.5); /* Slightly increase size on hover */
+}
+
+.oval-box-content {
+    transition: opacity 0.3s ease; /* Smooth transition for content opacity */
+}
+
+.oval-box:hover .oval-box-content {
+    opacity: 1; /* Show content on hover */
+}
+
